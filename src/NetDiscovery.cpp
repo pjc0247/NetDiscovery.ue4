@@ -6,7 +6,7 @@
 
 static NetDiscoveryImpl *netDiscoveryImpl = nullptr;
 
-void UNetDiscovery::StartDiscovering() {
+void UNetDiscovery::StartDiscovery() {
 	if (IsDiscovering()) {
 		UE_LOG(LogTemp, Warning, TEXT("Already discovering"));
 		return;
@@ -14,7 +14,7 @@ void UNetDiscovery::StartDiscovering() {
 
 	netDiscoveryImpl = new NetDiscoveryImpl();
 }
-bool UNetDiscovery::EndDiscovering(bool &isServer, FString &serverIp) {
+bool UNetDiscovery::EndDiscovery(bool &isServer, FString &serverIp) {
 	if (IsDiscovering() == false) {
 		UE_LOG(LogTemp, Warning, TEXT("IsDiscovering != true"));
 		return false;
