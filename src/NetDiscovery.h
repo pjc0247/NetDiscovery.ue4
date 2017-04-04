@@ -10,10 +10,10 @@ class PUPPERPARTYVR_API UNetDiscovery : public UBlueprintFunctionLibrary
 	
 public:
 	UFUNCTION(BlueprintCallable, Category="NetDiscovery")
-	static void StartDiscovering();
+	static void StartDiscovery();
 	
 	UFUNCTION(BlueprintCallable, Category = "NetDiscovery")
-	static bool EndDiscovering(bool &isServer, FString &serverIp);
+	static bool EndDiscovery(bool &isServer, FString &serverIp);
 
 	UFUNCTION(BlueprintPure, Category = "NetDiscovery")
 	static bool IsDiscovering();
