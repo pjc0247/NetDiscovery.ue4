@@ -4,7 +4,7 @@
 #include "NetDiscovery.generated.h"
 
 UCLASS()
-class PUPPERPARTYVR_API UNetDiscovery : public UBlueprintFunctionLibrary
+class SIMPLENETDISCOVERY_API UNetDiscovery : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 	
