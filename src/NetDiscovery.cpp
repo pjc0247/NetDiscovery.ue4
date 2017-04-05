@@ -38,3 +38,9 @@ bool UNetDiscovery::IsDiscovering() {
 
 	return netDiscoveryImpl->IsDiscovering();
 }
+int UNetDiscovery::GetCurrentDiscoveredPeersCount() {
+	if (netDiscoveryImpl == nullptr)
+		return 0;
+
+	return netDiscoveryImpl->GetCurrentPeersCount();
+}
