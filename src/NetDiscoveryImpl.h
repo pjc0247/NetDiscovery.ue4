@@ -12,6 +12,7 @@ public:
 
 	bool EndDiscovery();
 
+	int GetCurrentPeersCount() const;
 	bool IsDiscovering() const;
 	bool IsServer() const;
 	std::string GetServerIp() const;
