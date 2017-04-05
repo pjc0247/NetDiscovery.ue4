@@ -55,6 +55,9 @@ bool NetDiscoveryImpl::EndDiscovery() {
 	return true;
 }
 
+int NetDiscoveryImpl::GetCurrentPeersCount() const {
+	return peers.size();
+}
 bool NetDiscoveryImpl::IsDiscovering() const {
 	return discovering;
 }
