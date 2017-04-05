@@ -17,4 +17,7 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "NetDiscovery")
 	static bool IsDiscovering();
+
+	UFUNCTION(BlueprintPure, Category = "NetDiscovery")
+	static int GetCurrentDiscoveredPeersCount();
 };
