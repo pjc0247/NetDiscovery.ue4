@@ -5,7 +5,7 @@
 #include <atomic>
 #include <map>
 
-class PUPPERPARTYVR_API NetDiscoveryImpl {
+class SIMPLENETDISCOVERY_API NetDiscoveryImpl {
 public:
 	NetDiscoveryImpl();
 	~NetDiscoveryImpl();

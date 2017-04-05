@@ -1,4 +1,4 @@
-#include "PupperPartyVR.h"
+#include "SimpleNetDiscovery.h"
 
 #include "NetDiscoveryImpl.h"
 
